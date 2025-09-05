@@ -1,0 +1,56 @@
+{
+  "menu": [
+    {
+      "storeId": 201,
+      "productId": "P001",
+      "name": "CangreBurger",
+      "description": "Carne, Queso, Tomate fresco, Lechuga, Cebolla, Ketchup y la famosa Fórmula Secreta .",
+      "price": 25000,
+      "img": "https://cdn.ntmx.me/media/2024/08/30/_hd6603f970d9df2a1246ae4e29944adba21c4cfe56.webp",
+      "available": true
+    },
+    {
+      "storeId": 201,
+      "productId": "P002",
+      "name": "Kelp Shake",
+      "description": "Bebida refrescante hecha con algas marinas.",
+      "price": 6000,
+      "img": "https://stormcapsule.store/cdn/shop/files/resin-kelp-shake-bottle-981087.jpg?v=1713592528&width=1445",
+      "available": true
+    },
+    {
+      "storeId": 202,
+      "productId": "D001",
+      "name": "Duff Beer x6",
+      "description": "Cerveza rubia, refrescante y económica.",
+      "price": 12000,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE_kD9kIgxmQAq-YWkTiSy7NsOoDI2iBs0Kg&s",
+      "available": true
+    },
+    {
+      "storeId": 202,
+      "productId": "D002",
+      "name": "Aguardiente Blanco del Valle x750ml",
+      "description": "El mejor acompañante para cualquier reunión.",
+      "price": 35000,
+      "img": "https://licoresjunior.com/wp-content/uploads/2023/12/Aguardiente-Blanco-Del-Valle-750-Ml.jpg",
+      "available": true
+    },
+    {
+      "id": 1026,
+      "storeId": 201,
+      "name": "aa",
+      "description": "aaaaaa",
+      "price": 111,
+      "img": "https://www.bancodealimentoschicago.org/wp-content/uploads/2022/04/Baked-Fries.jpg"
+    },
+    {
+      "id": 7032,
+      "storeId": 201,
+      "name": "Coca Cola",
+      "description": "La famossisima bebida favorita de todos",
+      "price": 5000,
+      "img": "https://tse4.mm.bing.net/th/id/OIP.5lVNKdItz8GbcTp3eyQWBQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+    }
+  ]
+}

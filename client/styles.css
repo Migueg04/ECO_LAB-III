@@ -1,0 +1,266 @@
+body {
+  margin: 50;
+  font-family: Arial, sans-serif;
+}
+
+
+/* Contenedor de los restaurantes */
+#restaurants-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Tarjeta individual */
+.restaurant-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* Imagen del restaurante */
+.restaurant-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Nombre del restaurante */
+.restaurant-card h4 {
+  font-size: 1.2rem;
+  margin: 8px 0;
+  color: #333;
+}
+
+/* Textos */
+.restaurant-card p {
+  font-size: 0.95rem;
+  margin: 4px 0;
+  color: #555;
+}
+
+/* Estilo especial para el rating */
+.restaurant-card p:last-child {
+  font-weight: bold;
+  color: #f39c12;
+}
+
+
+
+
+/* Menú */
+/* Contenedor del menú */
+#menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Tarjeta de cada plato */
+.menu-item-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* Imagen del plato */
+.menu-item-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Nombre del plato */
+.menu-item-card h4 {
+  font-size: 1.1rem;
+  margin: 6px 0;
+  color: #333;
+}
+
+/* Descripción */
+.menu-item-card p {
+  font-size: 0.9rem;
+  margin: 4px 0;
+  color: #666;
+}
+
+/* Precio */
+.menu-item-card p:nth-last-child(2) {
+  font-weight: bold;
+  color: #c31fff;
+  font-size: 1rem;
+}
+
+/* Botón */
+button {
+  margin-top: 10px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #bb00ff;
+  color: white;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #68008e;
+}
+
+
+
+/* Sección del carrito */
+
+
+/* Contenido principal */
+#restaurants-section,
+#menu-section {
+  margin-right: 320px; /* Deja espacio para el carrito */
+  padding: 1rem;
+}
+
+/* Carrito fijo */
+#cart-section {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;            /* ancho del carrito */
+  height: 100vh;           /* ocupa toda la altura de la ventana */
+  background-color: #f9f9f9;
+  border-left: 3px solid #bb00ff;
+  box-shadow: -4px 0 10px rgba(0,0,0,0.15);
+  padding: 1.5rem;
+  border-radius: 12px 0 0 12px; /* redondeado solo en el lado izquierdo */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Título del carrito */
+#cart-section h3 {
+  color: #bb00ff;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Contenido interno */
+#cart-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  overflow-y: auto;
+}
+
+/* Botón de pedido */
+#cart-btn {
+  background-color: #219150;
+  color: white;
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 100%;
+}
+
+#cart-btn:hover {
+  background-color: #e66a00;
+}
+
+/* cart del carrito */
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  margin: 6px 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.cart-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.cart-info {
+  flex-grow: 1;
+}
+
+input[type="text"]{
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cart-name {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.cart-price {
+  font-size: 0.8rem;
+  color: #555;
+  margin: 0;
+}
+
+.remove-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.remove-btn:hover {
+  color: red;
+}
+
+/* Card del pedido */
+.order-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 15px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.order-card h4 {
+  color: #bb00ff;
+}
+.order-card ul {
+  padding-left: 20px;
+}

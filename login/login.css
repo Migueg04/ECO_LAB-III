@@ -1,0 +1,103 @@
+body {
+  margin: 50;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin-top: 40px;
+  font-size: 2rem;
+  color: #c31fff;
+}
+
+h3, h4 {
+  color: #555;
+  margin: 10px 0;
+}
+
+/* ==== Botones principales ==== */
+button {
+  background: #c31fff;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  margin: 10px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+button:hover {
+  background: #68008e;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ==== Contenedor del formulario ==== */
+#form-container {
+  margin: 30px auto;
+  max-width: 400px;
+  padding: 20px;
+}
+
+/* ==== Card del formulario ==== */
+form {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+form:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+form h2 {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  color: #333;
+  text-align: center;
+}
+
+/* ==== Labels e inputs ==== */
+label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+input {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #bb00ff;
+  box-shadow: 0 0 6px rgba(187, 0, 255, 0.3);
+  outline: none;
+}
+
+/* ==== Botón de submit ==== */
+form button[type="submit"] {
+  background: #27ae60;
+  width: 100%;
+  margin-top: 10px;
+}
+
+form button[type="submit"]:hover {
+  background: #1e8449;
+}

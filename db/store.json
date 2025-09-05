@@ -1,0 +1,52 @@
+{
+  "stores": [
+    {
+      "id": 201,
+      "img": "https://upload.wikimedia.org/wikipedia/commons/2/25/The_Krusty_Krab.png",
+      "name": "Krusty Krab",
+      "category": "Comida Rápida",
+      "phone": "+57 3201112233",
+      "email": "contacto@KrustyKrab.com",
+      "password": "krusty123",
+      "address": {
+        "street": "Calle 80 #15-22",
+        "city": "Cali",
+        "neighborhood": "El Peñón",
+        "location": {
+          "lat": 4.692000,
+          "lng": -74.100500
+        }
+      },
+      "rating": 4.5,
+      "deliveryFee": 5000,
+      "openHours": {
+        "open": "17:00",
+        "close": "23:00"
+      }
+    },
+    {
+      "id": 202,
+      "img": "https://whalebonemag.com/wp-content/uploads/2018/11/Moes_Tavern-1050x591.png",
+      "name": "Moe's Tavern",
+      "category": "Bar",
+      "phone": "+57 3124445566",
+      "email": "contacto@moes.com",
+      "password": "moe123",
+      "address": {
+        "street": "Cra. 35 #7-12",
+        "city": "Cali",
+        "neighborhood": "San Antonio",
+        "location": {
+          "lat": 6.210000,
+          "lng": -75.568900
+        }
+      },
+      "rating": 4.7,
+      "deliveryFee": 7000,
+      "openHours": {
+        "open": "18:00",
+        "close": "02:00"
+      }
+    }
+  ]
+}

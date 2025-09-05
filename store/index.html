@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>¿Cocinar?</h1>
+    <button id="open-btn">Abierto</button>
+    <button id="close-btn">Cerrado</button>
+
+    <p id="store-status" class="status-text">El negocio está cerrado ❌</p>
+
+
+    <section id="menu">
+        <h3>Menú actual</h3>
+        <div id="current-menu">
+           
+        </div>
+    </section>
+    <section id="add-product-section">
+        <h3>Agregar nuevo producto</h3>
+        <form id="add-product-form">
+            <input type="text" id="product-name" placeholder="Nombre del producto" required>
+            <input type="text" id="product-description" placeholder="Descripción o ingredientes" required>
+            <input type="number" id="product-price" placeholder="Precio del producto" required>
+
+            <input type="url" id="product-image-url" placeholder="URL de la imagen" required>
+            <div id="image-preview"></div>
+
+
+            <button type="submit">Agregar Producto</button>
+        </form>
+    </section>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+{
+  "orders": [
+    {
+      "id": 1757105183006,
+      "clientId": 1,
+      "storeId": "201",
+      "storeName": "Krusty Krab",
+      "items": [
+        {
+          "name": "CangreBurger",
+          "price": 25000
+        },
+        {
+          "name": "Kelp Shake",
+          "price": 6000
+        }
+      ],
+      "deliveryFee": 5000,
+      "total": 36000,
+      "payMethod": "Tarjeta",
+      "adress": "Pance",
+      "status": "completada",
+      "createdAt": "2025-09-05T20:46:23.006Z"
+    }
+  ]
+}

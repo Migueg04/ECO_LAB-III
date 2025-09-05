@@ -1,0 +1,120 @@
+body {
+  margin: 50;
+  font-family: Arial, sans-serif;
+}
+
+#orders-container,
+#accepted-orders-container,
+#completed-orders-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Card de cada orden */
+.order-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* Nombre del restaurante */
+.order-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Lista de productos */
+.order-items {
+  margin: 10px 0;
+  padding: 10px;
+  background: #fafafa;
+  border-radius: 8px;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  padding: 4px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.order-item:last-child {
+  border-bottom: none;
+}
+
+.item-name {
+  font-weight: 500;
+  color: #444;
+}
+
+.item-price {
+  font-weight: bold;
+  color: #bb00ff;
+}
+
+/* Estado */
+.status {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.status.pendiente {
+  color: #e67e22;
+}
+
+.status.aceptada {
+  color: #2980b9;
+}
+
+.status.completada {
+  color: #27ae60;
+}
+
+/* Botones de rider */
+.take-btn,
+.complete-btn {
+  margin-top: 10px;
+  width: 100%;
+  color: white;
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.take-btn {
+  background: #bb00ff;
+}
+
+.take-btn:hover {
+  background: #68008e;
+}
+
+.complete-btn {
+  background: #27ae60;
+}
+
+.complete-btn:hover {
+  background: #1e8449;
+}
+
+/* Mensajes cuando no hay órdenes */
+.empty-message {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #777;
+  font-style: italic;
+}

@@ -1,0 +1,235 @@
+body {
+  margin: 50;
+  font-family: Arial, sans-serif;
+}
+
+
+/* Contenedor del menú de la tienda */
+#current-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Card de producto (menú item) */
+.menu-item {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* Imagen del producto */
+.menu-item img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Nombre */
+.menu-item h4 {
+  font-size: 1.1rem;
+  margin: 6px 0;
+  color: #333;
+}
+
+/* Descripción */
+.menu-item p {
+  font-size: 0.9rem;
+  margin: 4px 0;
+  color: #666;
+}
+
+/* Precio */
+.menu-item p:last-child {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #c31fff;
+}
+
+/* Sección para agregar producto */
+#add-product-section {
+  max-width: 400px;           /* tamaño fijo de la card */
+  margin: 30px 0;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#add-product-section h3 {
+  color: #bb00ff;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+/* Formulario */
+#add-product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Inputs */
+#add-product-form input[type="text"],
+#add-product-form input[type="number"] {
+  width: calc(100% - 20px);   /* se reduce un poco para no salirse del padding */
+  padding: 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  margin: 0 auto;             /* mantiene centrados dentro de la card */
+  box-sizing: border-box;     /* asegura que padding no rompa el ancho */
+}
+
+#add-product-form input:focus {
+  border-color: #bb00ff;
+  box-shadow: 0 0 6px rgba(187, 0, 255, 0.4);
+  outline: none;
+}
+
+/* Botón verde */
+#add-product-form button {
+  width: 100%;
+  padding: 12px;
+  background: #28a745;        /* verde */
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#add-product-form button:hover {
+  background: #1e7e34;        /* verde más oscuro al hover */
+}
+
+#add-product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Inputs */
+#add-product-form input[type="text"],
+#add-product-form input[type="number"] {
+  width: 100%;              /* ocupa todo el ancho disponible de la card */
+  padding: 0.7rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+#add-product-form input:focus {
+  border-color: #bb00ff;
+  box-shadow: 0 0 6px rgba(187, 0, 255, 0.4);
+  outline: none;
+}
+
+/* Botón verde */
+#add-product-form button {
+  padding: 12px;
+  background: #28a745;        /* verde */
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#add-product-form button:hover {
+  background: #1e7e34;        /* verde más oscuro al hover */
+}
+
+/* Ocultar input original */
+#product-image {
+  display: none;
+}
+
+/* Botón personalizado */
+#product-image-label {
+  display: inline-block;
+  background-color: #bb00ff; /* mismo morado que usas en botones */
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#product-image-label:hover {
+  background-color: #68008e;
+}
+
+/* Botones de estado */
+.status-controls {
+  margin-bottom: 15px;
+}
+
+#open-btn,
+#close-btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+#open-btn {
+  background-color: #28a745; /* verde */
+}
+
+#open-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+#close-btn {
+  background-color: #dc3545; /* rojo */
+}
+
+#close-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Texto de estado */
+.status-text {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.status-open {
+  color: #28a745;
+}
+
+.status-closed {
+  color: #dc3545;
+}
+
+
+

@@ -1,0 +1,91 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Jose Manuel Giraldo",
+      "email": "jose.giraldo@example.com",
+      "phone": "+57 3104567890",
+      "password": "jose123",
+      "address": {
+        "street": "Calle 45 #12-34",
+        "city": "Cali",
+        "neighborhood": "Pance",
+        "location": {
+          "lat": 4.653332,
+          "lng": -74.083652
+        }
+      },
+     
+      "orderHistory": [
+        {
+          "orderId": "A001",
+          "date": "2025-08-01",
+          "status": "delivered",
+          "total": 45000,
+          "items": ["Pizza Margarita", "Coca Cola 1.5L"]
+        }
+      ]
+    },
+
+    {
+      "id": 2,
+      "name": "Miguel Giraldo",
+      "email": "miguel.giraldo@example.com",
+      "phone": "+57 3209876543",
+      "password": "password_Miguel",
+      "address": {
+        "street": "Carrera 10 #20-55",
+        "city": "Cali",
+        "neighborhood": "Ciudad Jardín",
+        "location": {
+          "lat": 6.207611,
+          "lng": -75.567596
+        }
+      },
+      
+      "orderHistory": [
+        {
+          "orderId": "B010",
+          "date": "2025-08-15",
+          "status": "canceled",
+          "total": 28000,
+          "items": ["Hamburguesa BBQ", "Papas fritas"]
+        },
+        {
+          "orderId": "B011",
+          "date": "2025-08-28",
+          "status": "delivered",
+          "total": 32000,
+          "items": ["Sushi Roll", "Té verde"]
+        }
+      ]
+    },
+    
+    {
+      "id": 3,
+      "name": "Karol Llamosa",
+      "email": "karol.llamosa@example.com",
+      "phone": "+57 3152223344",
+      "password": "password_Karol",
+      "address": {
+        "street": "Av. Las Américas #50-22",
+        "city": "Cali",
+        "neighborhood": "San Fernando",
+        "location": {
+          "lat": 3.437220,
+          "lng": -76.522499
+        }
+      },
+
+      "orderHistory": [
+        {
+          "orderId": "C100",
+          "date": "2025-08-25",
+          "status": "in_progress",
+          "total": 15000,
+          "items": ["Arepa de queso", "Jugo de maracuyá"]
+        }
+      ]
+    }
+  ]
+}

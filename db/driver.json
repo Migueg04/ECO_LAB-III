@@ -1,0 +1,52 @@
+{
+  "drivers": [
+    {
+      "id": 101,
+      "name": "Andrés Pérez",
+      "phone": "+57 3119876543",
+      "email": "andres.perez@example.com",
+      "password": "andres123",
+      "transport": "moto",
+      "licensePlate": "ABC123",
+      "status": "available",
+      "currentLocation": {
+        "lat": 4.654321,
+        "lng": -74.082222
+      },
+      "rating": 4.8,
+      "assignedOrders": []
+    },
+
+    {
+      "id": 102,
+      "name": "Sofía Morales",
+      "phone": "+57 3195556677",
+      "email": "sofia.morales@example.com",
+      "password": "password_Sofia",
+      "transport": "bicicleta",
+      "status": "available",
+      "currentLocation": {
+        "lat": 6.208100,
+        "lng": -75.565000
+      },
+      "rating": 4.6,
+      "assignedOrders": []
+    },
+    {
+      "id": 103,
+      "name": "Diego Herrera",
+      "phone": "+57 3001112233",
+      "email": "diego.herrera@example.com",
+      "password": "password_Diego",
+      "transport": "carro",
+      "licensePlate": "XYZ987",
+      "status": "resting",
+      "currentLocation": {
+        "lat": 3.436500,
+        "lng": -76.521800
+      },
+      "rating": 4.2,
+      "assignedOrders": []
+    }
+  ]
+}
